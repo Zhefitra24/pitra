@@ -13,8 +13,26 @@ struct siswa{
     string jurusan;
     nilai Nilai; // struct in struct
 };
-void dataSiswa(){
+void namaSiswa(){
     cout << "Masukkan nama : ";
+};
+void nisnSiswa(){
+    cout << "Masukkan NISN : ";
+};
+void jurusanSiswa(){
+    cout << "Masukkan jurusan : ";
+};
+void mtkSiswa(){
+    cout << "Masukkan nilai MTK : ";
+};
+void BInSiswa(){
+    cout << "Masukkan nilai B.INDO : ";
+};
+void BIgSiswa(){
+    cout << "Masukkan nilai B.INGGRIS: ";
+};
+void IPASiswa(){
+    cout << "Masukkan nilai IPA : ";
 };
 void tambahDataSiswa();//menambahkan data pada file siswa.txt
 void tampilDataSiswa();//membaca data dari file siswa.txt dan ditampilkan
@@ -24,7 +42,20 @@ void ranking(); // menampilkan data siswa berdasarkan peringkatnya
 
 int main()
 {
-  float nama;
-  dataSiswa();
-  cin.ignore();
-  getline(cin, nama);
+  siswa data;
+    namaSiswa();
+    cin >> data.nama;
+    nisnSiswa();
+    cin >> data.NISN;
+    jurusanSiswa();
+    cin >> data.jurusan;
+    mtkSiswa();
+    cin >> data.Nilai.Mtk;
+    BInSiswa();
+    cin >> data.Nilai.BIn;
+    BIgSiswa();
+    cin >> data.Nilai.Big;
+    IPASiswa();
+    cin >> data.Nilai.IPA;
+    
+}
